@@ -28,7 +28,7 @@ public class MyUserDetailService implements UserDetailsService {
         if (optionalMyUser.isPresent()){
             var myUser = optionalMyUser.get();
             return User.builder()
-                    .username(myUser.getUsername())
+                    .username(myUser.getUserName())
                     .password(myUser.getPassword())
                     .roles(getRoles(myUser))
                     .build();

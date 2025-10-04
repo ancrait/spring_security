@@ -11,7 +11,7 @@ public class MyUser {
     private Long id;
 
     @Column(name = "user_name")
-    private String username;
+    private String userName;
 
     @Column(name = "passwod")
     private String password;
@@ -22,12 +22,12 @@ public class MyUser {
     public MyUser() {
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String username) {
+        this.userName = username;
     }
 
     public String getPassword() {
